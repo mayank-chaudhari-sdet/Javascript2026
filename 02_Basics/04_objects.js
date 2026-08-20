@@ -49,3 +49,14 @@ console.log(Object.entries(mergedObject)); // [['key1', 'value1'], ['key2', 'val
 // to check if the user property exists in the object
 console.log(mergedObject.hasOwnProperty("key1")); // true - checks if the object has the specified property
 console.log(mergedObject.hasOwnProperty("key5")); // false - checks if the object has the specified property
+
+// destructuring an object
+const course = {
+    courseName: "JavaScript",
+    price: 999,
+    courseInstructor: "Mayank Kumar"
+}
+
+const {courseInstructor: instructor} = course; // destructuring the course object to extract the properties into variables
+
+console.log(instructor); // Mayank Kumar
